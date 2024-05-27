@@ -4,22 +4,15 @@ on:
   push:
     branches: ["main"]
 
-  workflow_dispatch:
+    workflow_dispatch:
 
-  permissions:
+    permissions:
     contents: read
     pages: write
     id-token: write
 
-  concurrency:
-    group: "pages"
-    cancel-in-progress: false
-
 jobs:
   build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
@@ -36,9 +29,9 @@ jobs:
 
       - name: Build the React app
         run: npm run build
-
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        with:
+        with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
