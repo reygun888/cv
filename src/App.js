@@ -175,7 +175,7 @@ return(
             <hr></hr>
             <h4> BÉNÈVOLAT</h4>
             <div className='pre my-3'>
-              <h3>•	Création d'une matrice pour un site vitrine d"affichage d'un document</h3>
+              <h3>•	Création d'une matrice pour un site vitrine d'affichage d'un document</h3>
               <ul className='desc my-3'>
                 <li className='mb-4'> 
                     <a href="https://reygun888.github.io/cv/">
