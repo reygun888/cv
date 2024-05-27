@@ -154,7 +154,6 @@ return(
                   </a>
                 </li>
               </ul>
-              <hr className='sep'></hr>
             </div>
             <div className='pre my-3'>
               <h3>•	Application web d’un gestionnaire de personnel pour ‘Ressources Formation’</h3>
@@ -171,11 +170,10 @@ return(
                   </a>
                 </li>
               </ul>
+              <hr className='sep'></hr>
             </div>
-            <hr></hr>
-            <h4> BÉNÈVOLAT</h4>
             <div className='pre my-3'>
-              <h3>•	Création d'une matrice pour un site vitrine d'affichage d'un document</h3>
+              <h3>•	Création d'un site pour afficher un document</h3>
               <ul className='desc my-3'>
                 <li className='mb-4'> 
                     <a href="https://reygun888.github.io/cv/">
@@ -184,7 +182,7 @@ return(
                     </a>
                 </li>
                 <li>-	Élaboration d'un site dynamique avec la bibliothèque 'REACT'</li>
-                <li>-	Rendre accessible le document via un mot de passe (J'ai pris un CV comme exemple)</li>
+                <li>-	Accès au document via un mot de passe (J'ai pris un CV comme exemple)</li>
                 <li>-	Pouvoir générer un PDF</li>
                 <li>-	Rendre le site responsif sur divers supports</li>
                 <li>-	Déploiement du site via GitHub</li>
