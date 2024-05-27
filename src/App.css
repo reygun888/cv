@@ -47,6 +47,10 @@ input{
   display: flex;
 }
 
+hr{
+  border-top: 5px solid black;
+}
+
 a{
   color: #333;
   text-decoration: underline;
@@ -161,6 +165,7 @@ h4{
   padding: 5px;
 }
 .sep{
+  border-top: 2px solid;
   margin-left: 25%;
   margin-right: 25%;
  }
@@ -208,8 +213,18 @@ h4{
   }
 
   hr{
+    border-top: 2px solid black;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  .sep{
+    border-top: 0.5px solid black;
+   }
+
+  a,
+  a:hover{
+    text-underline-offset: 1px;
   }
 
 }

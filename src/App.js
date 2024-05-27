@@ -116,7 +116,7 @@ return(
               <li>
                 <h5>LANGUE</h5>
               <div className='contact'>
-                <li>- Anglais : Écrit et Parlé</li>
+                <li>- Anglais : niveau intermédiaire</li>
               </div>
               </li>
               <br></br>
@@ -138,7 +138,6 @@ return(
               Sortant d’une formation de développement Web et Mobile, je souhaiterais me perfectionner en mettant en exergue mes connaissances et étoffer mon savoir-faire par de nouvelles compétences.
               </p>
             </div>
-            <hr></hr>
             <h4> PROJETS PERSONNEL</h4>
             <div className='pre my-3'>
               <h3>•	Site vitrine pour ‘Sécurité d’Abord’</h3>
@@ -147,13 +146,14 @@ return(
                 <li>-	Mise en forme du site</li>
                 <li>-	Rendre le site responsif sur divers supports</li>
                 <li>-	Optimiser le SEO et les performances de la page</li>
-                <li className='mt-3'>
+                <li className='my-3'>
                   <a href="https://github.com/reygun888/Security.git">
                   <i className="fa-brands fa-github"></i>
                   <span> https://github.com/reygun888/Security.git</span>
                   </a>
                 </li>
               </ul>
+              <hr className='sep'></hr>
             </div>
             <div className='pre my-3'>
               <h3>•	Application web d’un gestionnaire de personnel pour ‘Ressources Formation’</h3>
@@ -163,7 +163,7 @@ return(
                 <li>-	Création d’un calendrier avec des fonctionnalités d’écoute et d’affichage</li>
                 <li>-	Mise en place de la base de données</li>
                 <li>-	Initialisation de différents CRUD</li>
-                <li className='mt-3'> 
+                <li className='my-3'> 
                   <a href="https://github.com/reygun888/GestionRH.git">
                   <i className="fa-brands fa-github"></i>
                   <span> https://github.com/reygun888/GestionRH.git</span>
@@ -186,7 +186,7 @@ return(
                 <li>-	Pouvoir générer un PDF</li>
                 <li>-	Rendre le site responsif sur divers supports</li>
                 <li>-	Déploiement du site via GitHub</li>
-                <li className='mt-3'>
+                <li className='my-3'>
                   <a href="https://github.com/reygun888/cv.git">
                   <i className="fa-brands fa-github"></i>
                   <span> https://github.com/reygun888/cv.git</span>
@@ -194,13 +194,12 @@ return(
                 </li>
               </ul>
             </div>
-            <hr></hr>
             <h4> EXPÉRIENCE PROFESSIONNELLES</h4>
             <div className='pre my-3'>
               <h3>Conception et réalisation d’un site web pour l’ONG ‘Les Amis Du Monde’ sous Symfony, lors d’un stage en entreprise</h3>
               <ul className='desc my-3'>
                 <li>Référent : Paul Gaultier Toti – TMS-web – Tél. : 06 52 22 85 43</li>
-                <li className='mt-3'>
+                <li className='my-3'>
                   <a href='https://github.com/reygun888/ONG2.git'>
                   <i className="fa-brands fa-github"></i>
                   <span> https://github.com/reygun888/ONG2.git</span>
@@ -208,12 +207,10 @@ return(
                 </li>
             </ul>
             </div>
-            <hr></hr>
             <h4> FORMATION PROFESSIONNELLE</h4>
               <div className='pre my-3'>
                 <h3>Certification en Développement Web – Ressources Formation, 2024</h3>
               </div>
-            <hr></hr>
           </section>
         </main>
       ) : (
