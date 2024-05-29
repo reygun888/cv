@@ -142,10 +142,18 @@ return(
             <div className='pre my-3'>
               <h3>•	Site vitrine pour ‘Sécurité d’Abord’</h3>
               <ul className='desc my-3'>
+                <li className='mb-4'> 
+                    <a href="https://reygun888.github.io/security/">
+                    <i class="fa-brands fa-internet-explorer"></i>
+                    <span> https://reygun888.github.io/security/</span>
+                    </a>
+                </li>
                 <li>-	Élaboration de la page HTML</li>
                 <li>-	Mise en forme du site</li>
                 <li>-	Rendre le site responsif sur divers supports</li>
                 <li>-	Optimiser le SEO et les performances de la page</li>
+                <li>- Réalisation d'un CI/CD</li>
+                <li>- Déploiement du site</li>
                 <li className='my-3'>
                   <a href="https://github.com/reygun888/Security.git">
                   <i className="fa-brands fa-github"></i>
@@ -217,7 +225,7 @@ return(
         <main className="champs">
         <section className='connect'>
           <header>
-            <h2 className='mb-5'>Connection</h2>
+            <h2 className='mb-5'>Bienvenue</h2>
           </header>
             <form onSubmit={handleSubmit}>
               <div>
