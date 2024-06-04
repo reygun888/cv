@@ -23,6 +23,12 @@ function App() {
       if (!confirmed) {
         return;
       }
+
+      // Sélectionner le bouton de génération du PDF et le supprimer du DOM
+    const pdfButton = document.getElementById('pdf-button');
+    const parentNode = pdfButton.parentNode;
+    parentNode.removeChild(pdfButton);
+
     const input = document.getElementById ('cv-content');
     html2canvas(input).then((canvas) =>{
       const imgData = canvas.toDataURL('image/png');
@@ -30,10 +36,16 @@ function App() {
       const width = pdf.internal.pageSize.getWidth();
       const height = pdf.internal.pageSize.getHeight();
       pdf.addImage(imgData, 'PNG', 0, 0, width, height);
+
+      // Réinsérer le bouton de génération du PDF dans le DOM
+      parentNode.insertBefore(pdfButton, null);
+      
       pdf.save('cv.pdf');
     })
     .catch((error)=>{
       console.error('Erreur lors de la génération du fichier');
+      // Réinsérer le bouton de génération du PDF dans le DOM en cas d'erreur
+      parentNode.insertBefore(pdfButton, null);
     });
   };
 return(
@@ -66,6 +78,11 @@ return(
                   <i className="fa-brands fa-github"></i>
                   <span className='ms-1'>https://github.com/reygun888</span>
                   </a>
+                  <br></br>
+                  <a href="https://reygun888.github.io/prosdd/"className='mt-3'>
+                  <i class="fa-brands fa-internet-explorer"></i>
+                  <span className='net ms-1'>https://reygun888.github.io/prosdd</span>
+                  </a>
                 </div>
               </li>
               <li>
@@ -77,7 +94,6 @@ return(
                 <li>- JavaScript</li>
                 <li>- PHP</li>
                 <li>- CSS</li>
-                <li>- PHP</li>
                 <hr></hr>
                 <p>Framework et bibliothèque</p>
                 <li>- Symfony</li>
@@ -95,6 +111,17 @@ return(
                 <li>- Responsive WEB</li>
                 <li>- Utilisation de la méthode Agile</li>
                 <li>- Conception UML, cahier des charges</li>
+              </div>
+              </div>
+              </li>
+              <li>
+              <div className='competence'>
+                <h5>SAVOIR-ÊTRE</h5>
+              <div className='contact'>
+                <li>- Adaptabilité</li>
+                <li>- Collaboration</li>
+                <li>- Organisation</li>
+                <li>- Rigueur</li>
               </div>
               </div>
               </li>
@@ -120,7 +147,7 @@ return(
               </div>
               </li>
               <br></br>
-            <button className='pdf' onClick={generatePDF}>
+            <button className='pdf' id="pdf-button" onClick={generatePDF}>
             <i class="fa-solid fa-file-pdf ms-1"></i>
             Générer un PDF</button>
             </ul>
@@ -181,23 +208,22 @@ return(
               <hr className='sep'></hr>
             </div>
             <div className='pre my-3'>
-              <h3>•	Création d'un site pour afficher un document</h3>
+              <h3>•	Création d'un site pour afficher mon profil</h3>
               <ul className='desc my-3'>
                 <li className='mb-4'> 
-                    <a href="https://reygun888.github.io/cv/">
+                    <a href="https://reygun888.github.io/prosdd/">
                     <i class="fa-brands fa-internet-explorer"></i>
-                    <span> https://reygun888.github.io/cv/ (Mot de passe: cv)</span>
+                    <span> https://reygun888.github.io/prosdd/</span>
                     </a>
                 </li>
                 <li>-	Élaboration d'un site dynamique avec la bibliothèque 'REACT'</li>
-                <li>-	Accès au document via un mot de passe (J'ai pris un CV comme exemple)</li>
-                <li>-	Pouvoir générer un PDF</li>
+                <li>-	Utilisation de divers API (AOS, Swiper, ...)</li>
                 <li>-	Rendre le site responsif sur divers supports</li>
                 <li>-	Déploiement du site via GitHub</li>
                 <li className='my-3'>
-                  <a href="https://github.com/reygun888/cv.git">
+                  <a href="https://github.com/reygun888/prosdd.git">
                   <i className="fa-brands fa-github"></i>
-                  <span> https://github.com/reygun888/cv.git</span>
+                  <span> https://github.com/reygun888/prosdd.git</span>
                   </a>
                 </li>
               </ul>
