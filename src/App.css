@@ -7,6 +7,7 @@
 .App {
   text-align: center;
 }
+
 .champs {
   position: relative; /* nécessaire pour que l'élément pseudo soit positionné correctement */
   width: 100%;
@@ -88,7 +89,7 @@ h1{
   width: 70%;
   border: solid 2px rgb(111, 154, 185);
   border-radius: 5%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 h5{
@@ -99,8 +100,8 @@ h5{
   margin: 0;
 }
 .contact{
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   text-align: start;
 }
 
@@ -166,9 +167,19 @@ h4{
 }
 .sep{
   border-top: 2px solid;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
  }
+
+.desc{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.liens{
+  font-weight: normal;
+  font-style: normal;
+}
 
 @media(max-width: 796px) {
  
