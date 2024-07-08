@@ -149,7 +149,12 @@ h5{
 }
 
 .titre{
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
+}
+
+.pics{
+  border: 5px solid white;
+  border-radius: 5px;
 }
 
 .titre,
@@ -165,11 +170,21 @@ h4{
   text-decoration: underline;
   padding: 5px;
 }
+
+.periode{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .sep{
   border-top: 2px solid;
   margin-left: 15%;
   margin-right: 15%;
  }
+
+.certif{
+  font-size:x-large;
+}
 
 .desc{
   font-weight: bold;

@@ -158,22 +158,75 @@ return(
           </aside>
           </header>
           <section className="corps">
-            <div className='titre'>
-              <h1>DAVID SAT</h1>
-              <h3>DÉVELOPPEUR WEB</h3>
+            <div className='titre d-flex justify-content-between'>
+              <div>
+                <img src={process.env.PUBLIC_URL + "/img/qr_1.jpeg"} alt="Portfolio" className="pics" width="100"/>
+                <p>Lien vers mon profil</p>
+              </div>
+              <div>
+                <h1 className='d-flex justify-content-end'>DAVID SAT</h1>
+                <h3 className='mt-4'>DÉVELOPPEUR WEB FULLSTACK</h3>
+              </div>
             </div>
             <hr></hr>
             <h4> PRÉSENTATION</h4>
-            <div className='pre my-3'>
+            <div className='pre my-2'>
               <p>
               Mes expériences m'ont permis de développer des qualités essentielles telles que la rigueur, la gestion du temps, et la capacité à travailler sous pression, atouts qui seront indéniablement bénéfiques dans le domaine du Dev.Web. De plus, ma certification en développement web et mobile témoigne de ma capacité à assimiler rapidement de nouvelles technologies et à m'adapter à des environnements techniques variés.
               </p>
             </div>
+            <h4> EXPÉRIENCE PROFESSIONNELLES</h4>
+            <div className='pre my-2'>
+              <h6 className='periode'>MARS - MAI 2024</h6>
+              <h3>Conception et réalisation d'un site web pour l'ONG 'Les Amis Du Monde' sous Symfony, pour TMS qui est une startup qui s’occupe de concevoir des applications et de sites WEB en FullStack. </h3>
+              <p>Développement d'un site web permettant la gestion des adhérents selon des rôles définis et la mise en place de fonctionnalités d'inscription, de don et de connexion. Le projet a impliqué la création d'un diagramme de classe pour modéliser les entités, la gestion des tâches selon leur difficulté et l'organisation des sprints. Un Dashboard a été mis en place pour permettre la modification du visuel du site. Cette expérience m'a permis de renforcer mes compétences en développement web avec Symfony, en gestion de projet agile et en conception de base de données.</p>
+              <ul className='desc my-2'>
+              <div className='d-flex justify-content-around'>
+              <div> 
+                <li>-	Conception du diagramme de classe</li>
+                <li>-	Création des formulaires</li>
+                <li>-	Mise en place de la gestion des rôles pour les adhérents</li>
+              </div>
+              <div>
+                <li>-	Organisation des tâches selon leur difficulté</li>
+                <li>- Planification des sprints pour le développement du site</li>
+                <li>-	Modification du visuel du site via un Dashboard</li>
+              </div>
+              </div>
+                <li className='liens my-2'>Référent : Paul Gaultier Toti – TMS-web – Tél. : 06 52 22 85 43</li>
+            </ul>
+            <hr className='sep'></hr>
+            </div>
+            <div className='pre my-2'>
+              <h6 className='periode'>SEPTEMBRE 2023 - MARS 2024</h6>
+              <h3>Application web interne d'un gestionnaire de personnel pour l’organisme 'Ressources Formation' qui sont en charge de diverses formations pour Pôle Emploi</h3>
+              <p>Cette expérience professionnelle m'a permis de renforcer mes compétences en développement web avec Symfony, en conception de base de données et en gestion de projet. J'ai également acquis une expérience pratique dans la création d'interfaces utilisateur et la mise en place de fonctionnalités complexes.</p>
+              <ul className='desc my-2'>
+              <div className='d-flex justify-content-around'>
+              <div> 
+                <li>-	Utilisation du Framework Symfony</li>
+                <li>- Utilisation des langages HTML, PHP, CSS, JavaScript, SQL	</li>
+                <li>-	Conception du diagramme de classe et de l’User Case</li>
+              </div>
+              <div>
+                <li>-	Mise en place de la base de données</li>
+                <li>-	Initialisation de différents CRUD</li>
+                <li>-	Création d’un calendrier avec des fonctionnalités d’écoute et d’affichage</li>
+              </div>
+              </div>
+                <li className='liens my-2'> 
+                  {/* <a href="https://github.com/reygun888/GestionRH.git"> */}
+                  {/* <i className="fa-brands fa-github"></i>
+                  <span> https://github.com/reygun888/GestionRH.git</span> */}
+                  {/* </a> */}
+                </li>
+              </ul>
+            </div>
             <h4> PROJETS PERSONNEL</h4>
-            <div className='pre my-3'>
+            <div className='pre my-2'>
               <h3>Site vitrine pour ‘Sécurité d’Abord’</h3>
               <p>Développement d'un site vitrine pour une société de sécurité en respectant une maquette fournie et en assurant une visibilité multiplatforme. Le projet a impliqué la création de la structure HTML, la mise en forme avec CSS, l'optimisation du SEO et des performances, la réalisation d'un CI/CD et le déploiement du site. Cette expérience m'a permis de renforcer mes compétences en développement web, en intégration de maquette, en optimisation de performances et en déploiement continu.</p>
-              <ul className='desc my-3'>
+              <ul className='desc my-2'>
               <div className='d-flex justify-content-around'>
                 <div> 
                   <li>-	Élaboration de la page en HTML</li>
@@ -185,7 +238,7 @@ return(
                   <li>- Réalisation d'un CI/CD</li>
                   <li>- Déploiement du site</li></div>
                 </div>
-                <div className=' liens my-3 d-flex justify-content-center'>
+                <div className=' liens my-2 d-flex justify-content-center'>
                 <li className='mx-2'>
                   {/* <a href="https://github.com/reygun888/Security.git"> */}
                   <i className="fa-brands fa-github"></i>
@@ -202,10 +255,10 @@ return(
               </ul>
               <hr className='sep'></hr>
             </div>
-            <div className='pre my-3'>
+            <div className='pre my-2'>
               <h3>Création d'un site pour afficher mon profil</h3>
               <p>Développement d'un site dynamique avec React pour présenter mon profil et mes projets. Utilisation de diverses API pour ajouter des fonctionnalités telles que des animations et un carrousel de projets. Le site a été rendu responsif pour une visibilité optimale sur différents supports et déployé via GitHub Pages. Cette expérience m'a permis de renforcer mes compétences en développement web avec React et en intégration d'API.</p>
-              <ul className='desc my-3'>
+              <ul className='desc my-2'>
               <div className='d-flex justify-content-around'>
               <div> 
                 <li>-	Élaboration d'un site dynamique avec la bibliothèque 'REACT'</li>
@@ -216,70 +269,25 @@ return(
                 <li>-	Déploiement du site via GitHub</li>
               </div>
               </div>
-                <div className='liens my-3 d-flex justify-content-center'>
-                <li className='mx-2'> 
-                    {/* <a href="https://reygun888.github.io/prosdd/"> */}
-                    <i class="fa-brands fa-internet-explorer"></i>
-                    <span> https://reygun888.github.io/prosdd/</span>
-                    {/* </a> */}
-                </li>
+                <div className='liens my-2 d-flex justify-content-center'>
                 <li className='mx-2'>
                   {/* <a href="https://github.com/reygun888/prosdd.git"> */}
                   <i className="fa-brands fa-github"></i>
                   <span> https://github.com/reygun888/prosdd.git</span>
                   {/* </a> */}
                 </li>
+                <li className='mx-2'> 
+                    {/* <a href="https://reygun888.github.io/prosdd/"> */}
+                    <i class="fa-brands fa-internet-explorer"></i>
+                    <span> https://reygun888.github.io/prosdd/</span>
+                    {/* </a> */}
+                </li>
                 </div>
               </ul>
             </div>
-            <h4> EXPÉRIENCE PROFESSIONNELLES</h4>
-            <div className='pre my-3'>
-              <h3>Application web interne d’un gestionnaire de personnel pour ‘Ressources Formation’</h3>
-              <p>Cette expérience professionnelle m'a permis de renforcer mes compétences en développement web avec Symfony, en conception de base de données et en gestion de projet. J'ai également acquis une expérience pratique dans la création d'interfaces utilisateur et la mise en place de fonctionnalités complexes.</p>
-              <ul className='desc my-3'>
-              <div className='d-flex justify-content-around'>
-              <div> 
-                <li>-	Utilisation du Framework Symfony</li>
-                <li>- Utilisation des langages HTML, PHP, CSS, JavaScript, SQL	</li>
-                <li>-	Conception du diagramme de classe et de l’User Case</li>
-              </div>
-              <div>
-                <li>-	Mise en place de la base de données</li>
-                <li>-	Initialisation de différents CRUD</li>
-                <li>-	Création d’un calendrier avec des fonctionnalités d’écoute et d’affichage</li>
-              </div>
-              </div>
-                <li className='liens my-3'> 
-                  {/* <a href="https://github.com/reygun888/GestionRH.git"> */}
-                  <i className="fa-brands fa-github"></i>
-                  <span> https://github.com/reygun888/GestionRH.git</span>
-                  {/* </a> */}
-                </li>
-              </ul>
-              <hr className='sep'></hr>
-            </div>
-            <div className='pre my-3'>
-              <h3>Conception et réalisation d’un site web pour l’ONG ‘Les Amis Du Monde’ sous Symfony, lors d’un stage en entreprise</h3>
-              <p>Développement d'un site web permettant la gestion des adhérents selon des rôles définis et la mise en place de fonctionnalités d'inscription, de don et de connexion. Le projet a impliqué la création d'un diagramme de classe pour modéliser les entités, la gestion des tâches selon leur difficulté et l'organisation des sprints. Un Dashboard a été mis en place pour permettre la modification du visuel du site. Cette expérience m'a permis de renforcer mes compétences en développement web avec Symfony, en gestion de projet agile et en conception de base de données.</p>
-              <ul className='desc my-3'>
-              <div className='d-flex justify-content-around'>
-              <div> 
-                <li>-	Conception du diagramme de classe</li>
-                <li>-	Création des formulaires</li>
-                <li>-	Mise en place de la gestion des rôles pour les adhérents</li>
-              </div>
-              <div>
-                <li>-	Organisation des tâches selon leur difficulté</li>
-                <li>- Planification des sprints pour le développement du site</li>
-                <li>-	Modification du visuel du site via un Dashboard</li>
-              </div>
-              </div>
-                <li className='liens my-3'>Référent : Paul Gaultier Toti – TMS-web – Tél. : 06 52 22 85 43</li>
-            </ul>
-            </div>
             <h4> FORMATION PROFESSIONNELLE</h4>
-              <div className='pre my-3'>
-                <h3>Certification Professionnel Niv.5 en Développement Web et Web Mobile – Ressources Formation, 2024</h3>
+              <div className='pre my-2'>
+                <h3 className='certif'>Certification Professionnel Niv.5 en Développement Web et Web Mobile – Ressources Formation, 2024</h3>
               </div>
           </section>
         </main>
